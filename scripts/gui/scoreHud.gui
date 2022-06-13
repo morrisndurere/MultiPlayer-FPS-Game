@@ -1,0 +1,105 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(ScoreGui) {
+   position = "0 0";
+   extent = "1024 768";
+   minExtent = "8 8";
+   horizSizing = "width";
+   vertSizing = "height";
+   profile = "GuiModelessDialogProfile";
+   visible = "1";
+   active = "1";
+   tooltipProfile = "GuiToolTipProfile";
+   hovertime = "1000";
+   isContainer = "1";
+   canSave = "1";
+   canSaveDynamicFields = "1";
+      configured = "0";
+      noCursor = "1";
+
+   new GuiBitmapCtrl(ScoreHud) {
+         bitmap = "art/gui/hudfillx3";
+         wrap = "0";
+         position = "192 120";
+         extent = "640 600";
+         minExtent = "8 8";
+         horizSizing = "center";
+         vertSizing = "center";
+         profile = "CenterPrintProfile";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "0";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+		 
+      new GuiTextCtrl() {
+            text = "SCORES";
+            maxLength = "255";
+            margin = "0 0 0 0";
+            padding = "0 0 0 0";
+            anchorTop = "1";
+            anchorBottom = "0";
+            anchorLeft = "1";
+            anchorRight = "0";
+            position = "280 10";
+            extent = "72 24";
+            minExtent = "64 24";
+            horizSizing = "center";
+            vertSizing = "relative";
+            profile = "ScoreHudHeaderProfile";
+            visible = "1";
+            active = "1";
+            tooltipProfile = "GuiToolTipProfile";
+            hovertime = "1000";
+            isContainer = "1";
+            canSave = "1";
+            canSaveDynamicFields = "0";
+      };
+      new GuiTextCtrl(TeamOneHeader) {
+            maxLength = "255";
+            margin = "0 0 0 0";
+            padding = "0 0 0 0";
+            anchorTop = "1";
+            anchorBottom = "0";
+            anchorLeft = "1";
+            anchorRight = "0";
+            position = "20 32";
+            extent = "230 24";
+            minExtent = "230 24";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            profile = "ScoreHudHeaderBlueProfile";
+            visible = "1";
+            active = "1";
+            tooltipProfile = "GuiToolTipProfile";
+            hovertime = "1000";
+            isContainer = "1";
+            canSave = "1";
+            canSaveDynamicFields = "0";
+      };
+      new GuiTextCtrl(TeamTwoHeader) {
+            maxLength = "255";
+            margin = "0 0 0 0";
+            padding = "0 0 0 0";
+            anchorTop = "1";
+            anchorBottom = "0";
+            anchorLeft = "1";
+            anchorRight = "0";
+            position = "362 32";
+            extent = "230 24";
+            minExtent = "230 24";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            profile = "ScoreHudHeaderRedProfile";
+            visible = "1";
+            active = "1";
+            tooltipProfile = "GuiToolTipProfile";
+            hovertime = "1000";
+            isContainer = "1";
+            canSave = "1";
+            canSaveDynamicFields = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
